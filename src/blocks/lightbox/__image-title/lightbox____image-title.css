@@ -1,0 +1,10 @@
+.lightbox__image-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.25;
+  color: white;
+  margin: 0;
+  position: absolute;
+  bottom: -25px;
+}
