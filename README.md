@@ -19,7 +19,7 @@
 
 ## Проект на Github Pages
 
-[Ссылка на проект](https://sumere4ny.github.io/mesto-react/)
+[Ссылка на проект](https://sumere4ny.github.io/react-mesto-auth/)
 
 ## Дополнительная информация
 
