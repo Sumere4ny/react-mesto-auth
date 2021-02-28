@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
 import ProtectedRoute from './ProtectedRoute';
 import Header from './Header';
 import Login from './Login';
@@ -14,6 +13,7 @@ import AddPlacePopup from './AddPlacePopup';
 import ImagePopup from './ImagePopup';
 import { api } from '../utils/api';
 import { auth } from '../utils/auth';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 import { InfoTooltipContext, infoTooltipCaptions } from '../contexts/infoTooltipContext';
 import avatar from '../images/avatar.jpg';
@@ -41,7 +41,7 @@ function App() {
     function tokenCheck() {
       const jwt = localStorage.getItem('token');
       if (jwt) {
-        auth.UserLoginInfo(jwt)
+        auth.getUserLoginInfo(jwt)
           .then(res => {
             if (res) {
               setEmail(res.email);
@@ -97,7 +97,7 @@ function App() {
   }
 
   function handleLoginFormSubmit(email, password) {
-    auth.singIn(password, email)
+    auth.signIn(password, email)
       .then(data => {
         if (data.token) {
           localStorage.setItem('token', data.token);
@@ -112,7 +112,7 @@ function App() {
   }
 
   function handleRegisterFormSubmit(email, password) {
-    auth.singUp(password, email)
+    auth.signUp(password, email)
       .then(res => {
         if (res) {
           setInfoTooltipContext('success');
@@ -185,9 +185,18 @@ function App() {
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
 
-        <Header onLogout={handleLogout} user={email} isLoggedIn={loggedIn} />
+        <Header email={email} isLoggedIn={loggedIn} onLogout={handleLogout} />
 
-        <Switch>
+        <Switch>       
+          
+          <Route path='/sign-in'>
+            <Login onSubmit={handleLoginFormSubmit} />
+          </Route>
+          
+          <Route path='/sign-up'>
+            <Register onSubmit={handleRegisterFormSubmit} />
+          </Route>
+
           <ProtectedRoute 
             path="/" 
             component={Main} 
@@ -199,16 +208,9 @@ function App() {
             onCardClick={handleCardClick}
             onCardDelete={handleCardDelete}
             onCardLike={handleCardLike} />
-          <Route path='/sign-in'>
-            <Login onSubmit={handleLoginFormSubmit} />
-          </Route>
-          
-          <Route path='/sign-up'>
-            <Register onSubmit={handleRegisterFormSubmit} />
-          </Route>
                
         </Switch>
-        <Login />
+        
         {loggedIn && <Footer />}
 
       </div>

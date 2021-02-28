@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Register(props) {
+function Register(props) {
   const [password, setPassword] = React.useState('');
   const [email, setEmail] = React.useState('');
 
@@ -50,8 +50,8 @@ export default function Register(props) {
         </form>
 
         <p className="auth__redirect">
-          Уже зарегистрированы? 
-          {<Link to="/sign-in" className="link">
+          Уже зарегистрированы? {<Link to="/sign-in" 
+            className="link">
             Войти
           </Link>}
         </p>
@@ -59,3 +59,5 @@ export default function Register(props) {
     </main>
   )
 }
+
+export default Register

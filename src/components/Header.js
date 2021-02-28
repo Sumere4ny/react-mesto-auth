@@ -14,7 +14,7 @@ function Header(props) {
           <NavLink to='/sign-up' className="link header__nav-link">Зарегистрироваться</NavLink>
         </Route>
         {props.isLoggedIn && (<Route path="/">
-          <p className="header__user-info">{props.user}</p>
+          <p className="header__user-info">{props.email}</p>
           <button onClick={props.onLogout} className="link header__nav-link">Выйти</button>
         </Route>)}
       </nav>

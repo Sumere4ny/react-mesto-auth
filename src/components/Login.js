@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Login(props) {
+function Login(props) {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
@@ -63,3 +63,5 @@ export default function Login(props) {
     </main>
   )
 }
+
+export default Login
