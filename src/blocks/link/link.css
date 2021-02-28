@@ -1,0 +1,15 @@
+.link {
+  color: white;
+  outline: none;
+  text-decoration: none;
+  transition: opacity .15s linear;
+}
+
+.link:hover {
+  opacity: .6;
+}
+
+.link:active {
+  opacity: 1;
+  transition: 0s;
+}

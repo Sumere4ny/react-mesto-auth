@@ -1,7 +1,13 @@
+@import url(./__nav/header__nav.css);
+@import url(./__logo/header__logo.css);
+@import url(./__nav-link/header__nav-link.css);
+
 .header {
   margin: 0 auto;
   max-width: 882px;
   min-width: 320px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid rgba(84, 84, 84, .7);
 }

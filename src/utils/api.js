@@ -87,5 +87,4 @@ class Api {
   }
 }
 
-const api = new Api(requestParams);
-export default api
+export const api = new Api(requestParams);

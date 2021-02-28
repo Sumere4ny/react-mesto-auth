@@ -2,7 +2,9 @@
 @import './fonts/fonts.css';
 @import './blocks/page/page.css';
 @import './blocks/header/header.css';
-@import './blocks/header/__logo/header-logo.css';
+@import './blocks/auth/auth.css';
+@import './blocks/link/link.css';
+@import './blocks/auth-form/auth-form.css';
 @import './blocks/content/content.css';
 @import './blocks/profile/profile.css';
 @import './blocks/profile/__avatar-container/profile__avatar-container.css';
@@ -38,6 +40,7 @@
 @import './blocks/popup/__input/_type/popup__input_type_error.css';
 @import './blocks/popup/__submit/popup__submit.css';
 @import './blocks/popup/__submit/_disabled/popup__submit_disabled.css';
+@import './blocks/infoTooltip/infoTooltip.css';
 @import './blocks/lightbox/lightbox.css';
 @import './blocks/lightbox/__image/lightbox__image.css';
 @import './blocks/lightbox/__image-title/lightbox____image-title.css';
