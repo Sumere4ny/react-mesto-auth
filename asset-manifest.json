@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb2f3493.chunk.css",
-    "main.js": "/static/js/main.2757173b.chunk.js",
-    "main.js.map": "/static/js/main.2757173b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8312e6da.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8312e6da.js.map",
-    "static/js/2.95cf4c6c.chunk.js": "/static/js/2.95cf4c6c.chunk.js",
-    "static/js/2.95cf4c6c.chunk.js.map": "/static/js/2.95cf4c6c.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.eb2f3493.chunk.css.map": "/static/css/main.eb2f3493.chunk.css.map",
-    "static/js/2.95cf4c6c.chunk.js.LICENSE.txt": "/static/js/2.95cf4c6c.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/trash-icon.e3c42771.svg",
-    "static/media/avatar.74c3c0fb.jpg": "/static/media/avatar.74c3c0fb.jpg",
-    "static/media/icon-cross.471086c8.svg": "/static/media/icon-cross.471086c8.svg",
-    "static/media/icon-ok.e004e6e7.svg": "/static/media/icon-ok.e004e6e7.svg",
-    "static/media/like-button.df0c9655.svg": "/static/media/like-button.df0c9655.svg",
-    "static/media/logo.c2821b38.svg": "/static/media/logo.c2821b38.svg"
+    "main.css": "/react-mesto-auth/static/css/main.259fb7d3.chunk.css",
+    "main.js": "/react-mesto-auth/static/js/main.2757173b.chunk.js",
+    "main.js.map": "/react-mesto-auth/static/js/main.2757173b.chunk.js.map",
+    "runtime-main.js": "/react-mesto-auth/static/js/runtime-main.40c30de3.js",
+    "runtime-main.js.map": "/react-mesto-auth/static/js/runtime-main.40c30de3.js.map",
+    "static/js/2.95cf4c6c.chunk.js": "/react-mesto-auth/static/js/2.95cf4c6c.chunk.js",
+    "static/js/2.95cf4c6c.chunk.js.map": "/react-mesto-auth/static/js/2.95cf4c6c.chunk.js.map",
+    "index.html": "/react-mesto-auth/index.html",
+    "static/css/main.259fb7d3.chunk.css.map": "/react-mesto-auth/static/css/main.259fb7d3.chunk.css.map",
+    "static/js/2.95cf4c6c.chunk.js.LICENSE.txt": "/react-mesto-auth/static/js/2.95cf4c6c.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/react-mesto-auth/static/media/trash-icon.e3c42771.svg",
+    "static/media/avatar.74c3c0fb.jpg": "/react-mesto-auth/static/media/avatar.74c3c0fb.jpg",
+    "static/media/icon-cross.471086c8.svg": "/react-mesto-auth/static/media/icon-cross.471086c8.svg",
+    "static/media/icon-ok.e004e6e7.svg": "/react-mesto-auth/static/media/icon-ok.e004e6e7.svg",
+    "static/media/like-button.df0c9655.svg": "/react-mesto-auth/static/media/like-button.df0c9655.svg",
+    "static/media/logo.c2821b38.svg": "/react-mesto-auth/static/media/logo.c2821b38.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8312e6da.js",
+    "static/js/runtime-main.40c30de3.js",
     "static/js/2.95cf4c6c.chunk.js",
-    "static/css/main.eb2f3493.chunk.css",
+    "static/css/main.259fb7d3.chunk.css",
     "static/js/main.2757173b.chunk.js"
   ]
 }
