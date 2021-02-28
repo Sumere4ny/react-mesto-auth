@@ -10,8 +10,6 @@
 App.test.js
 setupTests.js
 reportWebVitals.js
-package-lock.json
-package.json
 
 # production
 /build
