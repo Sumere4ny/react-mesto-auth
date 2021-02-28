@@ -7,6 +7,10 @@
 
 # testing
 /coverage
+App.test.js
+setupTests.js
+reportWebVitals.js
+package-lock.json
 
 # production
 /build
@@ -14,6 +18,7 @@
 # misc
 .DS_Store
 .env.local
+.eslintcache
 .env.development.local
 .env.test.local
 .env.production.local
