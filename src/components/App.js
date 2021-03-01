@@ -36,7 +36,7 @@ function App() {
   });
   const [cards, setCards] = React.useState([]);
 
-  
+
   React.useEffect(() => {
     function tokenCheck() {
       const jwt = localStorage.getItem('token');
@@ -44,8 +44,7 @@ function App() {
         auth.getUserLoginInfo(jwt)
           .then(res => {
             if (res) {
-              setEmail(res.email);
-              setCurrentUser(res);
+              setEmail(res.data.email);
               history.push('/');
               handleLogin();
             }
@@ -81,7 +80,7 @@ function App() {
     setSelectedCard(card);
     setIsImagePopupOpen(true);
   };
-  
+
   function handleLogin() {
     setLoggedIn(true);
   }
@@ -153,7 +152,7 @@ function App() {
       })
       .catch(err => console.log(err));
   }
- 
+
   function handleCardLike(card) {
     const isLiked = card.likes.some(i => i._id === currentUser._id);
     (!isLiked ? api.putLike(card._id) : api.deleteLike(card._id))
@@ -171,15 +170,15 @@ function App() {
         setCards(newCards);
       })
       .catch(err => console.log(err));
-  } 
+  }
 
   function closeAllPopups() {
     setIsEditAvatarPopupOpen(false);
     setIsEditProfilePopupOpen(false);
     setIsAddPlacePopupOpen(false);
-    setIsImagePopupOpen(false);    
+    setIsImagePopupOpen(false);
     setIsInfoTooltipOpen(false);
-  } 
+  }
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
@@ -187,10 +186,10 @@ function App() {
 
         <Header email={email} isLoggedIn={loggedIn} onLogout={handleLogout} />
 
-        <Switch>       
-        <ProtectedRoute 
-            exact path="/" 
-            component={Main} 
+        <Switch>
+        <ProtectedRoute
+            exact path="/"
+            component={Main}
             loggedIn={loggedIn}
             cards={cards}
             onEditProfile={handleEditProfileClick}
@@ -203,32 +202,32 @@ function App() {
           <Route path='/sign-in'>
             <Login onSubmit={handleLoginFormSubmit} />
           </Route>
-          
+
           <Route path='/sign-up'>
             <Register onSubmit={handleRegisterFormSubmit} />
-          </Route>          
-               
+          </Route>
+
         </Switch>
-        
+
         {loggedIn && <Footer />}
 
       </div>
 
-      <EditProfilePopup 
-        isOpen={isEditProfilePopupOpen} 
-        onClose={closeAllPopups} 
-        onUpdateUser={handleUpdateUser} 
+      <EditProfilePopup
+        isOpen={isEditProfilePopupOpen}
+        onClose={closeAllPopups}
+        onUpdateUser={handleUpdateUser}
       />
 
-      <EditAvatarPopup 
-        isOpen={isEditAvatarPopupOpen} 
-        onClose={closeAllPopups} 
-        onUpdateAvatar={handleUpdateAvatar} 
+      <EditAvatarPopup
+        isOpen={isEditAvatarPopupOpen}
+        onClose={closeAllPopups}
+        onUpdateAvatar={handleUpdateAvatar}
       />
 
-      <AddPlacePopup 
-        isOpen={isAddPlacePopupOpen} 
-        onClose={closeAllPopups} 
+      <AddPlacePopup
+        isOpen={isAddPlacePopupOpen}
+        onClose={closeAllPopups}
         onAddPlace={handleUpdateCards}
       />
 
