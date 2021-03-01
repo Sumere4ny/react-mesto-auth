@@ -17,4 +17,13 @@
   }
 }
 
+@media screen and (max-width: 424px) {
+  .header__nav {
+    margin-right: 0;
+    flex-direction: column;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+  }
+}
+
 

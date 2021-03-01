@@ -18,6 +18,7 @@
 @media screen and (max-width: 424px) {
   .header {
     padding: 0;
+    justify-content: space-around;
   }
 }
 
