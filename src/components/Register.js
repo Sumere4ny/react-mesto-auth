@@ -22,10 +22,10 @@ function Register(props) {
   return (
     <main>
       <section className="auth">
+      <h2 className="auth-form__title">Регистрация</h2>
         <form className="auth-form"
               onSubmit={handleSubmit}
         >
-          <h2 className="auth-form__title">Регистрация</h2>
           <input
             type="email"
             placeholder="Email"
@@ -50,7 +50,7 @@ function Register(props) {
         </form>
 
         <p className="auth__redirect">
-          Уже зарегистрированы? {<Link to="/sign-in" 
+          Уже зарегистрированы? {<Link to="/sign-in"
             className="link">
             Войти
           </Link>}

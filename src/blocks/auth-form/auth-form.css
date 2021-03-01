@@ -3,9 +3,15 @@
 @import url(__title/auth-form__title.css);
 
 .auth-form {
-  display: flex;
-  flex-direction: column;
-  width: 358px;
-  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 424px) {
+  .auth-form {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 }
 

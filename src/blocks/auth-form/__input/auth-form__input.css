@@ -1,22 +1,22 @@
 .auth-form__input {
-  width: 100%;
-  min-height: 27px;
-  border: none;
+  border: 0;
   border-bottom: 2px solid #ccc;
-  background: transparent;
+  padding: 0;
+  box-sizing: border-box;
   margin-bottom: 30px;
-  color: white;
+  font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.auth-form__input:last-of-type {
-  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  color: #fff;
+  min-height: 28px;
+  width: 100%;
+  background-color: transparent;
 }
 
 .auth-form__input:focus {
   outline: none;
 }
+
 

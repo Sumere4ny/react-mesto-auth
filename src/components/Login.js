@@ -26,10 +26,10 @@ function Login(props) {
   return (
     <main className="content">
       <section className="auth">
+        <h2 className="auth-form__title">Вход</h2>
         <form className="auth-form"
               onSubmit={handleSubmit}
         >
-          <h2 className="auth-form__title">Вход</h2>
           <input
             type="email"
             placeholder="Email"
@@ -54,7 +54,7 @@ function Login(props) {
         </form>
 
         <p className="auth__redirect">
-          Ещё не зарегистрированы? {<Link to="/sign-up" 
+          Ещё не зарегистрированы? {<Link to="/sign-up"
             className="link">
             Регистриация
           </Link>}
