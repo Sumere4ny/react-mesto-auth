@@ -188,17 +188,8 @@ function App() {
         <Header email={email} isLoggedIn={loggedIn} onLogout={handleLogout} />
 
         <Switch>       
-          
-          <Route path='/sign-in'>
-            <Login onSubmit={handleLoginFormSubmit} />
-          </Route>
-          
-          <Route path='/sign-up'>
-            <Register onSubmit={handleRegisterFormSubmit} />
-          </Route>
-
-          <ProtectedRoute 
-            path="/" 
+        <ProtectedRoute 
+            exact path="/" 
             component={Main} 
             loggedIn={loggedIn}
             cards={cards}
@@ -208,6 +199,14 @@ function App() {
             onCardClick={handleCardClick}
             onCardDelete={handleCardDelete}
             onCardLike={handleCardLike} />
+
+          <Route path='/sign-in'>
+            <Login onSubmit={handleLoginFormSubmit} />
+          </Route>
+          
+          <Route path='/sign-up'>
+            <Register onSubmit={handleRegisterFormSubmit} />
+          </Route>          
                
         </Switch>
         
