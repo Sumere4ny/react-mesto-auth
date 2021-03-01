@@ -8,7 +8,7 @@ export default function InfoTooltip(props) {
     <section className={`popup ${props.isOpen && 'popup_opened'}`}
       id="popup__infoTooltip"
     >
-      <div className="infoTooltip">
+      <div className="infoTooltip popup__container">
         <img className="infoTooltip__icon"
           src={infoTooltipContext.imgPath}
           alt="Результат регистрации"

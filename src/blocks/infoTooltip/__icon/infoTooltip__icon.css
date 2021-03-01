@@ -3,3 +3,9 @@
   width: 120px;
   height: 120px;
 }
+
+@media screen and (max-width: 424px) {
+  .infoTooltip__icon {
+    margin-top: 0;
+  }
+}
