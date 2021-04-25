@@ -44,7 +44,7 @@ function App() {
         auth.getUserLoginInfo(jwt)
           .then(res => {
             if (res) {
-              setEmail(res.data.email);
+              setEmail(res.email);
               history.push('/');
               handleLogin();
             }
